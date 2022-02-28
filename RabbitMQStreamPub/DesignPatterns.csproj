@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Cases\Case22\**" />
+    <EmbeddedResource Remove="Cases\Case22\**" />
+    <None Remove="Cases\Case22\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.11.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Proxy\" />
+    <Folder Include="Strategy\Case2\" />
+  </ItemGroup>
+
+</Project>
