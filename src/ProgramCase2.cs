@@ -8,7 +8,7 @@ namespace DesignPatterns
 
     class ProgramCase2
     {
-        static void Main(string[] args)
+        static void MainC2(string[] args)
         {
             var container = ContainerCase2.Configure();
             var shippingProxy = container.Resolve<IShippingStrategy>(EShippingMethods.Proxy.ToString());
