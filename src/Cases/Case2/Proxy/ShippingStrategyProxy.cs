@@ -27,19 +27,6 @@ namespace DesignPatterns.Cases.Case2.Proxies
                 throw new InvalidOperationException($"No supported strategy found for shipping method. {method}");
 
             return strategy;
-        }
-
-        private static T Instantiate<T>(string className)
-        {
-            Type typeImplemented = typeof(T);
-            Type selectedType = Assembly.GetExecutingAssembly() 
-                    .GetTypes()
-                    .FirstOrDefault(t => typeImplemented.IsAssignableFrom(t) && t.Name == className);
-
-            if (selectedType == null)
-                throw new InvalidOperationException($"No supported strategy found for shipping method. {className}");
-
-            return (T)Activator.CreateInstance(selectedType);
-        }
+        }        
     }
 }
