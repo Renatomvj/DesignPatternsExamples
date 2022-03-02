@@ -50,7 +50,7 @@ namespace DesignPatterns
 
         }
 
-        static void Main(string[] args)
+        static void Mainc4(string[] args)
         {
             CompositionRoot().Resolve<Application>().Run();
 
